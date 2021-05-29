@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<input type="file" id="imageAdd" accept="image/*">
+<button data-bind="click: billImageUpload">Submit</button>
+  <i class="mdi mdi-plus-circle font-22 mr-1"></i>
+</label>
+</body>
+
+
+
+<div id="tableDiv1">
+	<table class="table" border="1">
+        <div class="mt-2"></div>
+          <thead class="thead-dark ">
+           <tr>
+              <th>Consumer No</th>
+              <th>Bill No</th>
+              <th>Total Amount</th>
+           <tr></thead>
+             <tbody>
+              <tr>
+                <td><!-- ko text: consumer_number --><!-- /ko --></td>
+                <td><!-- ko text: bill_number --><!-- /ko --></td>
+                <td><!-- ko text: net_payable_amount --><!-- /ko --></td>
+              </tr>
+          </tbody>
+	</table>
+</div>
+
+<script src='{% static "js/jquery.min.js" %}'></script>
+<script src='{% static "js/jQuery-3.4.1.js" %}'></script>
+<script src='{% static "js/knockout-3.4.2.js" %}'></script>
+<script src='{% static "js/custom/admin/home.js" %}'></script>
+</html>

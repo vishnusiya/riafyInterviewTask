@@ -22,6 +22,7 @@
 
 
   SHP.billImageUpload = function(data,e){
+    $('#tableDiv1').hide()
     var formdata = new FormData();
     var csrftoken = SHP.getCookie('csrftoken');
     if ($("#imageAdd").val() != "") {
@@ -47,6 +48,7 @@
     })
     .fail(function (jqXHR, textStatus, errorThrown) {
       console.log(jqXHR.responseText)
+      alert(jqXHR.responseText)
     })
   }
 

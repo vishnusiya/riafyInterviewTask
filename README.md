@@ -1,5 +1,4 @@
-# Student Web app
-
+# Riafy Interview Task
 
 ## Initial Project Setup
 1. Create a virtualenvironment
